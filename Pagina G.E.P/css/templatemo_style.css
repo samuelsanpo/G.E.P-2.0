@@ -190,7 +190,7 @@ img {
 
 .templatemo_lightgrey {
 background: url(../images/templatemo_reasonbg.jpg) no-repeat;
-	padding: 30px 0px;
+	padding: 20px 0px;
 
 }
 .templatemo_paracenter h2{
@@ -392,10 +392,11 @@ font-size:1.5em;
 .templatemo_clientimage	div.mleft5	{ left: 52%;}
 
 .templatemo_maps {
-  margin: 50px 0;
+  margin-bottom: 100px;
+	margin-top: 20px;
   display: block;
   overflow: hidden;
-  height: 280px;
+  height: 270px;
 }
 
 .fluid-wrapper {
@@ -567,7 +568,7 @@ and (max-width : 480px) {
 	.templatemo_lightgrey_about	{ padding-top: 50px;}
 	.templatemo_portfolio	{ padding-top: 50px; }
 	.templatemo_blog	{ padding-top: 50px;}
-	.templatemo_partner	{ padding-top: 50px;}
+	.templatemo_partner	{ padding-top: 60px;}
 	.templatemo_lightgrey	{ padding-top: 20px;}
 	.templatemo_bottom { padding: 15px; }
 	.templatemo_margintop10	{
