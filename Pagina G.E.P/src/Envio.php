@@ -5,6 +5,11 @@ use PHPMailer\PHPMailer\Exception;
 require 'Exception.php';
 require 'PHPMailer.php';
 require 'SMTP.php';
+	$nombre=$_POST["Nombre"];
+	$correo=$_POST["Correo"];
+	$Asunto=$_POST["Asunto"];
+	$Mensaje=$_POST["mensaje"];
+	$contenido="Nombre: ".$nombre."\nCorreo: ".$correo."\Mensaje: ".$mensaje;
 
 $mail = new PHPMailer(true);                              
 try {
@@ -21,11 +26,7 @@ try {
     $mail->AuthType = 'LOGIN';
 
     //Recipients   
-	$nombre=$_POST["Nombre"];
-	$correo=$_POST["Correo"];
-	$Asunto=$_POST["Asunto"];
-	$Mensaje=$_POST["mensaje"];
-	$contenido="Nombre: ".$nombre."\nCorreo: ".$correo."\Mensaje: ".$mensaje;
+
     $mail->setFrom('ventas@grupoelectricopersa.com');     //Direccion de correo remitente (DEBE SER EL MISMO "Username")
     $mail->addAddress($correo);     // Agregar el destinatario
     $mail->addReplyTo($correo);     //Direccion de correo para respuestas     
