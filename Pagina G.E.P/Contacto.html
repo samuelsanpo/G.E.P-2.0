@@ -94,22 +94,22 @@ ddsmoothmenu.init({
 			 <h2 >Envíanos un mensaje a nuestro correo </h2>
         <div class="row">
           <div class="col-md-3">
-            <form role="form">
+            <form action="Envio.php" method="post" role="form">
               <div class="form-group">
-                <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Nombre" maxlength="30">
+                <input name="Nombre" type="text" class="form-control" id="fullname" placeholder="Nombre" maxlength="30" required> 
               </div>
               <div class="form-group">
-                <input name="email" type="text" class="form-control" id="email" placeholder="Correo" maxlength="30">
+                <input name="Correo" type="text" class="form-control" id="email" placeholder="Correo" maxlength="30" required>
               </div>
               <div class="form-group">
-                <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" maxlength="40" required>
+                <input name="Asunto" type="text" class="form-control" id="subject" placeholder="Asunto" maxlength="40" required>
               </div>
-              <div><button type="button" class="btn btn-primary">Envía un mensaje </button></div>
+              <div><button type="submit" class="btn btn-primary">Envía un mensaje </button></div>
             </form>
           </div>
           <div class="col-md-9">
             <div class="txtarea">
-              <textarea name="message" rows="10" class="form-control" id="message"></textarea>
+              <textarea name="mensaje" rows="10" class="form-control" id="message" required></textarea>
             </div>
           </div>
         </div>
