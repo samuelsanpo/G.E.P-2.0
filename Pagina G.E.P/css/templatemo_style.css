@@ -61,8 +61,9 @@ img {
 
 .templatemo_top	{
 	position: fixed;
+	float:left;
 	z-index: 5000;
-	background: #ffffff;
+	background:url(../images/fondo_menu.jpg)no-repeat;;
 	width: 100%;
     opacity:0.95;
 }
@@ -71,20 +72,21 @@ img {
 	position: relative;
 }
 .logo { //logo
-	
-	padding: 0 0 0 20px;
-	width: 190px;
+	float:right;
+	padding: 10px 0px 10px 0px;
+	width: 100px;
 }
 .mainMenu {
 
 }
 .mainMenu ul {
-	float: right;
-	padding-left: 0;
-	margin-bottom: 0;
-	line-height: 60px;
+	float:right;
+	padding-left: 9px;
+	margin-bottom: 10px;
+	line-height: 30px;
 }
 .mainMenu li {
+	float:;
 	list-style-type: none;
 	display: inline-block;
 }
@@ -98,36 +100,38 @@ img {
 }
 
 #top-menu {
-    background: white;
+	float:right;
+	margin: 5px;
+    background-color:;
 }
-#top-menu ul { float: right;}
+#top-menu ul { float:right;}
 #top-menu li {
-    float: left;
-	line-height: 60px;
+    float:right;
+	line-height: 7
+		0px;
 	display: inline-block;
 }
 
 #top-menu a {
     display: block;
-    3.
-    03
-    .
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     transition: 1s all ease;
-    color: #666;
+    color: white;
+	
     text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
+	position: left;
 }
 
 #top-menu a:hover {
     color: #ffffff;
-	background: #EEB51D;
+	background:#EEB51D;
 }
 
 #top-menu li.active a {
     color: #ffffff;
-	background: #EEB51D;
+	background: #0E19C7;
 	line-height: 60px;
 	font-size: 14px;
 }
@@ -573,6 +577,8 @@ and (max-width : 480px) {
 		
 	}
 	.logo {
+		background:;
+		float: left;
 		text-align: center;
 	}
 	.socials ul {
@@ -585,7 +591,7 @@ and (max-width : 480px) {
 		line-height: 40px;
 	}
 	.mainMenu li a {
-	padding: 8px 7px;
+	padding: 8px 7px 30px ;
 
 	}
 	#top-menu ul {
@@ -599,7 +605,7 @@ and (max-width : 480px) {
 	line-height: 40px;
 }
 	#top-menu li a {
-	padding: 8px 7px;
+	padding: 3px 7px;
 
 	}
 	#top-menu li.active a {
