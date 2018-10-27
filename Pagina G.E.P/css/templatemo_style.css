@@ -309,10 +309,10 @@ font-size:1.5em;
 }
 
 #prev {
-  width: 20px;
+  width: 35px;
   height: 50px;
   position: absolute;
-  top: 20%;
+  top: -30%;
   left:0;
   text-indent: -9999px;
   background: url(../images/prev.png)0px -50px no-repeat;
